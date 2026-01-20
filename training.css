@@ -1,0 +1,429 @@
+/* === STYLING PARAGRAPHS === */
+.about p {
+    text-align: justify; /* Meratakan teks paragraf */
+    line-height: 1.5; /* Mengatur jarak antar baris */
+}
+.project p {
+    text-align: justify; /* Meratakan teks paragraf */
+    line-height: 1.5; /* Mengatur jarak antar baris */
+}
+
+
+/* === PORTFOLIO SECTION === */
+.my-portfolio {
+    padding: 70px; /*Jarak dalam antara konten dan border*/
+    background-color: #f9f9f9; /*Warna latar belakang, Abu-abu terang, soft & modern*/
+}
+
+
+/* === Container Galeri (Grid System) === */
+.gallery-container { /* Kontainer untuk galeri gambar */
+    display: grid; /* Menggunakan CSS Grid untuk tata letak */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Lebar minimal 250px */
+    gap: 20px; /* Jarak antar item galeri */
+}
+
+
+/* === Kartu Portfolio === */
+.gallery-item {
+    background: white; /*Background kartu putih*/
+    border-radius: 10px; /*Sudut membulat atau melengkung*/
+    overflow: hidden; /*Memotong konten yang melampaui batas kartu, Isi tidak keluar dari border*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /*Memberikan efek bayangan halus pada kartu, Efek melayang*/
+    transition: transform 0.3s ease; /*Animasi halus saat hover*/
+}
+
+
+/* === Efek Hover pada Kartu Portfolio === */
+.gallery-item:hover {
+    transform: translateY(-5px); /*Mengangkat kartu sedikit saat hover, Saat hover → kartu naik 5px*/
+}
+
+.portfolio-image {
+    width: 100%; /*Lebar penuh kartu*/
+    height: 200px; /*Tinggi tetap untuk konsistensi*/
+    object-fit: cover; /*Memastikan gambar mengisi area tanpa distorsi*/
+}
+
+.image-caption {
+    padding: 15px; /*Jarak dalam antara teks dan tepi kartu*/
+}
+
+.image-caption h3 {
+    margin: 0 0 10px; /*Jarak bawah untuk judul, atas 0 dan bawah 10px*/
+}
+
+.image-caption p {
+    font-size: 14px; /*Teks kecil*/
+    color: #555; /*Warna abu-abu gelap untuk teks*/
+}
+
+.view-details {
+    display: inline-block; /*bisa dikasih padding*/
+    margin-top: 10px;
+    text-decoration: none; /*hapus underline link*/
+    font-weight: bold;
+    color: white;
+    background: black;
+    padding: 8px 14px; /*ukuran tombol, Jarak dalam tombol*/
+    border-radius: 5px;
+}
+.view-details:hover {
+    background: #333; /*warna tombol saat hover, Hover lebih terang → feedback visual*/
+}
+
+
+/* === Contact Info === */
+.contact-info p {
+  margin: 0.3rem 0; /*Paragraf rapat, cocok buat kontak*/
+}
+
+.contact-info a {
+  color: #2563eb; /*Warna biru untuk link, Biru modern (mirip Tailwind blue)*/
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /*Garis bawah saat hover, Feedback visual*/
+}
+
+.about-content {
+  display: flex; /*layout horizontal*/
+  gap: 25px; /* jarak foto & teks */
+  align-items: flex-start; /* rata atas */
+}
+
+.profile-photo {
+  width: 160px; /*Ukuran foto profil*/
+  height: 160px; /*Ukuran foto profil*/
+  border-radius: 50%; /*Buat foto bulat*/
+  object-fit: cover; /*Foto rapi, Pastikan foto mengisi area tanpa distorsi*/
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /*Bayangan halus di sekitar foto, Depth elegan*/
+  flex-shrink: 0; /*Tidak mengecilkan foto*/
+}
+
+@media (max-width: 768px) { /*Responsive untuk layar kecil*/
+  .about-content {
+    flex-direction: column; /*Foto di atas, layout vertikal*/
+    align-items: center; /*Teks di bawah, Rata tengah*/
+    text-align: center; /*Tengah semua, Teks rata tengah*/
+  }
+}
+
+
+/* === RATA TENGAH HEADER === */
+header h1 {
+    text-align: center; /*Rata tengah untuk judul utama dan subjudul*/
+}   
+
+
+/* === RATA TENGAH PARAGRAPH === */
+header p {
+    text-align: center; /*Rata tengah untuk judul utama dan subjudul*/
+}
+
+
+.education {
+  padding: 70px 40px;
+  background-color: #f4f6f8;
+  text-align: center;
+}
+
+.education h2 {
+  margin-bottom: 45px;
+  font-size: 32px;
+}
+
+/* Grid */
+.edu-row {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.edu-row.top {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.edu-row.bottom {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card */
+.edu-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+.edu-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.edu-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Caption */
+.edu-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: #fff;
+  text-align: left;
+}
+
+.edu-caption h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.edu-caption p {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Highlight UB */
+.edu-card.highlight .edu-caption {
+  background: linear-gradient(to top, rgba(30,144,255,0.85), transparent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edu-row.top,
+  .edu-row.bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === STYLING LISTS === */
+.skills-list {
+    list-style-type: square; /*Mengubah jenis bullet point menjadi kotak*/
+    padding-left: 20px; /*Memberikan jarak kiri pada daftar*/
+}           
+
+
+body {
+  background-color: #f4f7fb;
+}
+
+.about,
+.about-project {
+  background-color: #132f4c;
+  color: #f1f5f9;
+  padding: 70px 60px;
+  margin: 80px auto;
+  max-width: 1100px;
+  border-radius: 18px;
+}
+
+.about-project h2 {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* =====================
+   GRID POST PROGRESS
+===================== */
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Kartu foto */
+.progress-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* FOTO KECIL / MEDIUM */
+.progress-card img {
+  width: 100%;
+  height: 140px;          /* KUNCI: BIAR GA GEDE */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Tanggal */
+.progress-date-card {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Keterangan */
+.progress-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1024px) {
+  .progress-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔥 4 kartu per baris */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.progress-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.progress-card img {
+  width: 100%;        /* ikut lebar kartu */
+  height: 160px;      /* 🔥 BIKIN KECIL & SERAGAM */
+  object-fit: cover;  /* ga gepeng */
+  border-radius: 8px;
+}
+.progress-date-card {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.progress-card p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.progress-date-card {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.project-detail {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+.project-detail h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-date {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.progress-card {
+  background: white;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.progress-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.progress-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #374151;
+}
+
+.progress-date-card {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+
+
+
+.explanation-portfolio {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 36px 40px;
+  background: #f4f7ff; /* biru muda lembut */
+  border-left: 6px solid #1e3a8a; /* navy klasik */
+  border-radius: 14px;
+}
+
+.explanation-portfolio h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f2a44;
+  margin-bottom: 16px;
+}
+
+.explanation-portfolio p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #243447;
+  text-align: justify;
+}

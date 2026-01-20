@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">  
+
+<head> <!--Semua yang ada di sini TIDAK muncul ke user.-->
+    <meta charset="UTF-8"> <!--web ini pakai standar karakter UTF-8. UTF-8 adalah standar paling lengkap & universal. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tampilan web ini harus menyesuaikan ukuran layar device. -->
+    <meta name="description" content="Portfolio website of Oscar Reizo Aprilliano, an undergraduate student in Electrical Engineering learning frontend development."> <!--Deskripsi halaman untuk Google Search-->
+    <title>Oscar Reizo | Portfolio | Undergraduate Student in Electrical Engineering</title> <!--Judul tab browser, Judul halaman di Google Search-->    
+    <link rel="stylesheet" href="training.css"> <!-- jembatan css menuju html -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Ikon tab browser -->
+</head>
+
+   
+<body> <!--Semua yang ada di sini muncul ke user.-->
+    
+    <header> <!--Bagian atas halaman-->
+        <h1>Oscar Reizo Aprilliano - Universitas Brawijaya</h1> <!--Judul utama halaman-->
+        <p>Electrical Engineering | Frontend Enthusiast | East Java</p>
+    </header>
+    
+        <main> <!--Membungkus konten utama website-->
+            
+            <section class="about"> <!--Membagi halaman menjadi bagian logis-->
+                <h2>About Coder</h2> <!--Judul bagian-->
+                
+                <div class="about-content">
+                    <img src="images/profile.jpg" alt="Photo of Oscar Reizo Aprilliano" class="profile-photo">
+    
+                    <p><strong>Oscar Reizo Aprilliano</strong> (18) is a <b>student of Brawijaya University from the Faculty of Engineering, Department of Electrical Engineering</b>. 
+                    He has a variety of experiences from school, ranging from external activities (leadership and communication training) and internal (academic education). 
+                    He has a high curiosity, and likes to explore the things he wants to know. He is very interested in the topics of technology, electricity, and programming languages. 
+                    Sometimes he also likes to study foreign languages such as <b>German and Japanese</b>. I truly desire to dedicate myself to the future of global movement, 
+                    contributing to the energy development of the Indonesian archipelago, which could one day become a developed nation.
+                    With my major and interests during college, I will continue to develop, understanding how computers work, how energy flows effectively,
+                    and how to speak fluently with the indigenous people of this land. </p>
+                
+                </div>   
+                    
+                <hr> <!--Garis pemisah--> 
+            </section>
+       
+            <section class="project"> <!--Membagi halaman menjadi bagian logis-->
+                <h2>About Project</h2> <!--Judul bagian-->
+                <p>This is my first frontend portfolio project where I showcase my skills and projects as I continue to learn 
+                    and grow in web development. This website is designed as a digital journal and professional portfolio to document
+                    every academic achievement, certification, and project I have worked on during my studies.
+                    I aim to document every milestone, from basic HTML structures to complex frontend frameworks, as part of my learning transparency.
+                    In addition to showcasing technical projects, I also use this space to record participation in various organizational activities and seminars during my studies.
+                    Each entry in this portfolio is designed to demonstrate the growth of my competency in web development over time.
+                    I believe that a good portfolio is not just about the final result, but also about the dedication shown through consistent updates and study logs.</p>
+                <button id="project-btn">Click for more information</button>
+            </section>      
+            
+            <section class="separator">
+                <hr> <!--Garis pemisah-->
+            </section>
+            
+            <section class="explanation-portfolio" id="explanation-portfolio">
+                <h2>My Visual Portfolio</h2>
+                <p>
+                    My visual portfolio presents a collection of web-based projects that reflect my
+                    learning journey in front-end development. Each project highlights not only the
+                    final visual outcome, but also the exploration, problem-solving, and design
+                    decisions involved throughout the process. Through consistent practice and
+                    structured documentation, this portfolio demonstrates my approach to clean layout
+                    design, responsive implementation, and thoughtful use of typography and color,
+                    serving as a visual record of my continuous growth and discipline in web
+                    development.
+                </p>
+            </section>
+
+            
+            <section class="my-portfolio">
+                <h2>My Visual Portfolio</h2>
+    
+                <div class="gallery-container">
+                   
+                    <div class="gallery-item">  
+                        <img src="images/project1.jpg" alt="Proyek Desain Web Pertama" class="portfolio-image"> 
+                       
+
+                        <div class="image-caption">
+                            <h3>Proyek Desain Web Pertama</h3>
+                            <p>Rangkaian perjalanan <i>ngoding</i> otodidak dari saya.</p>
+                            <a href="project-web-pertama.html" class="view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/activity_un.jpg" alt="Progres Belajar Bahasa Jerman" class="portfolio-image">
+                        <div class="image-caption">
+                            <h3>Progres Belajar Bahasa Jerman</h3>
+                            <p>Belajar bahasa Jerman dari 0 hingga <i>expert</i>.</p>
+                            <a href="#" class="view-details">Lihat Detail</a>
+                        </div>
+                    </div>  
+
+                    <div class="gallery-item">
+                        <img src="images/baca_buku.jpg" alt="Kegiatan Membaca Buku" class="portfolio-image">
+                        <div class="image-caption">
+                            <h3>1 Bulan, 1 Buku</h3>
+                            <p>Membaca lebih banyak tiap harinya.</p>
+                            <a href="#" class="view-details">Lihat Detail</a>
+                        </div>
+                    </div>
+
+                </div>
+        
+            </section> 
+            
+            <section class="education">
+                <h2>Perjalanan Pendidikan</h2>
+
+                <!-- Baris Atas -->
+                <div class="edu-row top">
+
+                    <div class="edu-card">
+                        <img src="images/tk.jpg" alt="Masa TK">
+                        <div class="edu-caption">
+                            <h3>TK YPPI Perawang [Tahun Ajaran 2010-2012]</h3>
+                            <p>Awal belajar mengenal dunia sekolah (source: ceritaperawang.id)</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-card">
+                        <img src="images/sd.jpg" alt="Masa SD">
+                        <div class="edu-caption">
+                            <h3>SD YPPI Perawang [Tahun Ajaran 2012-2019]</h3>
+                            <p>Membangun dasar ilmu dan karakter (source: google earth)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card">
+                        <img src="images/smp.jpg" alt="Masa SMP">
+                        <div class="edu-caption">
+                            <h3>SMP YPPI Perawang [Tahun Ajaran 2019-2022]</h3>
+                            <p>Masa transisi dan eksplorasi minat (source: google earth)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Baris Bawah -->
+                <div class="edu-row bottom">
+
+                    <div class="edu-card">
+                        <img src="images/sma.jpg" alt="Masa SMA">
+                        <div class="edu-caption">
+                            <h3>SMAN 1 Tualang [Tahun Ajaran 2022-2025]</h3>
+                            <p>Pematangan akademik dan visi masa depan (source: google earth)</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-card highlight">
+                        <img src="images/ub.jpg" alt="Universitas Brawijaya">
+                        <div class="edu-caption">
+                            <h3>S1 Teknik Elektro [2025-]</h3>
+                            <p>Universitas Brawijaya (source: kompas.com)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            
+            <section class="skills"> <!--Membagi halaman menjadi bagian logis-->
+                <h2>My Skills</h2> <!--Judul bagian-->
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (Basic)</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control with Git</li>
+                    <li>Basic SEO Principles</li>
+                    <li>Deutsch and English</li>
+                    <li>Guitar</li>
+                </ul>
+            </section>
+
+            <section class="learning-resources"> <!--Membagi halaman menjadi bagian logis-->
+                <h2>Learning Resources</h2> <!--Judul bagian-->
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a> - Comprehensive web development tutorials and references.</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank" rel="noopener">MDN Web Docs</a> - In-depth documentation on web standards and best practices.</li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a> - Tips, tricks, and techniques for using CSS effectively.</li>
+                    <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a> - Community-driven Q&A for programming and web development issues.</li>
+                    <li><a href="https://freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a> - Interactive coding lessons and projects to build real-world skills.</li>
+                </ul>
+            </section>
+       
+        <address class="contact-info">
+                            <p>Feel free to reach out to me through the contact information below for any collaboration, questions, or just to say hello!</p>          
+                            <p>📍 Malang, East Java, Indonesia</p>
+                            <p>🌐 <a href="https://www.ub.ac.id/id/" target="_blank" rel="noopener">Universitas Brawijaya</a></p> <!--Link dibuka di tab baru, dan untuk keamanan-->
+                            <p>For further inquiries, feel free to contact:</p>
+                            <p>📧 <a href="mailto:oscarreizo2009@gmail.com">oscarreizo2009@gmail.com</a></p>
+                            <p>📧 <a href="mailto:oscarreizo@student.ub.ac.id">oscarreizo@student.ub.ac.id</a></p>
+                            <p>📱 <a href="tel:+6285198038475">+62 851-9803-8475</a></p>
+        </address>
+
+
+        </main>
+    
+    <footer>
+        <p>&copy; 2026 Oscar Reizo Aprilliano. All rights reserved.</p>
+    </footer>
+    
+    <script src="js-training.js"></script> <!-- jembatan javascript menuju html -->
+</body>
+
+</html>
